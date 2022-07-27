@@ -4,7 +4,7 @@ import CardCategoryTitle from './CardCategoryTitle'
 import ItemContent from './ItemContent'
 
 
-function NetWorthCategory({category}) {
+function NetWorthCategory({category, isLiability}) {
   
   const {assetList, liabilityList} = useNetWorthContext()
 
@@ -12,7 +12,7 @@ function NetWorthCategory({category}) {
 
   return (
     <div className='pt-4'>
-      <CardCategoryTitle category={category}/>
+      <CardCategoryTitle category={category} isLiability={isLiability}/>
       <ul>
           {list
             .filter(item => item.category === category)

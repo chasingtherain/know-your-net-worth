@@ -11,8 +11,8 @@ function LiabilityCard({cardTitle,titleColor}) {
           <h2 className={`text-2xl font-semibold ${titleColor}`}>{cardTitle}</h2>
           <h2 className={`text-2xl font-semibold ${titleColor}`}>{formatter.format(liabilityListTotal)}</h2>
         </div>
-        <NetWorthCategory category="Loan"/>
-        <NetWorthCategory category="Credit Card"/>
+        <NetWorthCategory category="Loan" isLiability={true}/>
+        <NetWorthCategory category="Credit Card" isLiability={true}/>
     </div>
   )
 }
