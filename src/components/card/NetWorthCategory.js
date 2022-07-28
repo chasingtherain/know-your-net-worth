@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNetWorthContext } from '../hooks/useNetWorthContext'
+import { useNetWorthContext } from '../../hooks/useNetWorthContext'
 import CardCategoryTitle from './CardCategoryTitle'
 import ItemContent from './ItemContent'
 

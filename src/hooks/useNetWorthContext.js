@@ -1,5 +1,6 @@
 import { useContext } from 'react'
-import NetWorthContext from '../../contexts/NetWorthContext'
+import NetWorthContext from '../contexts/NetWorthContext'
+
 
 export const useNetWorthContext = () => {
     const netWorthContext = useContext(NetWorthContext)

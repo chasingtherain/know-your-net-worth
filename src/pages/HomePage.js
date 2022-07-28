@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import LiabilityCard from '../components/card/LiabilityCard'
 import NetWorthCard from '../components/card/NetWorthCard'
-import { useNetWorthContext } from '../components/hooks/useNetWorthContext'
+import { useNetWorthContext } from '../hooks/useNetWorthContext'
 
 function HomePage() {
   const {assetListTotal, formatter, liabilityListTotal} = useNetWorthContext()

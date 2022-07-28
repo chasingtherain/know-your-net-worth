@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNetWorthContext } from '../hooks/useNetWorthContext'
+import { useNetWorthContext } from '../../hooks/useNetWorthContext'
 import NetWorthCategory from './NetWorthCategory'
 
 function LiabilityCard({cardTitle,titleColor}) {
