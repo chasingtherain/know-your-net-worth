@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import AssetPage from "./pages/AssetPage";
+import DeleteModal from "./components/modal/DeleteModal";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<HomePage/>}/>
         <Route path='/modal' element={<FormModal/>}/>
         <Route path='/updateitem' element={<AssetPage/>}/>
+        <Route path='/delete' element={<DeleteModal/>}/>
         </Routes>
       </Router>
       <ToastContainer/>

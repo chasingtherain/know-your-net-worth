@@ -1,5 +1,7 @@
 import React from 'react'
 import { AiOutlineEdit, AiOutlineDelete } from "react-icons/ai";
+import DeleteModal from '../modal/DeleteModal';
+import EditModal from '../modal/EditModal';
 
 function ListItem({name,category, quantity,value}) {
     return (
@@ -7,8 +9,8 @@ function ListItem({name,category, quantity,value}) {
         <div className="flex flex-row justify-between mb-2">
             <span className="block font-medium tracking-widest uppercase dark:text-blue-400">{name}</span>
             <div className='flex gap-6'>
-                <button className='text-xl'><AiOutlineEdit/></button>
-                <button className='text-xl'><AiOutlineDelete/></button>
+                <EditModal/>
+                <DeleteModal/>
             </div>
         </div>
         <div className='flex flex-row'>
@@ -25,6 +27,7 @@ function ListItem({name,category, quantity,value}) {
                 <p className="tracking-widest"> {value}</p>
             </div>
         </div>
+        {/* <DeleteModal/> */}
     </div>
     )
 }
