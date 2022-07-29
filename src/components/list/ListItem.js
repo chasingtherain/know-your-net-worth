@@ -3,13 +3,13 @@ import { AiOutlineEdit, AiOutlineDelete } from "react-icons/ai";
 import DeleteModal from '../modal/DeleteModal';
 import EditModal from '../modal/EditModal';
 
-function ListItem({name,category, quantity,value}) {
+function ListItem({asset, name,category, quantity,value}) {
     return (
     <div className="w-full p-4 rounded-md bg-gray-900 text-gray-50 border-gray-50 border-2">
         <div className="flex flex-row justify-between mb-2">
             <span className="block font-medium tracking-widest uppercase dark:text-blue-400">{name}</span>
             <div className='flex gap-6'>
-                <EditModal/>
+                <EditModal asset={asset}/>
                 <DeleteModal/>
             </div>
         </div>
